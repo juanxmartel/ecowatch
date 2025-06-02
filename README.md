@@ -25,7 +25,7 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
 3.  **Crear un entorno virtual**:
     ```bash
     python -m venv venv
-    # En Windows
+    
     venv\Scripts\activate
 
     ```

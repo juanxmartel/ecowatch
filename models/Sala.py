@@ -1,5 +1,5 @@
-from ecowatch.models import Sensor
-from ecowatch.models import Log
+from models.Sensor import Sensor
+from models.logs import Log
 
 class Sala:
     """Representa una sala o zona monitoreada."""

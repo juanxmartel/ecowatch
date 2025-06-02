@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 import pandas as pd
 import os
 
-from ecowatch.models import Report
+from models.reportes import Report
 
 class ReportStrategy(ABC):
     """Interfaz para la estrategia de generación de reportes (Patrón Strategy)."""

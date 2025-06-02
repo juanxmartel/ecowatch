@@ -1,7 +1,7 @@
 import pandas as pd
 
-from ecowatch.models import Report, RoomStatusReport, CriticalAlertsReport
-from ecowatch.config import REPORT_OUTPUT_DIR
+from models.reportes import Report, RoomStatusReport, CriticalAlertsReport
+from config import REPORT_OUTPUT_DIR
 
 class ReportFactory:
     """Factoría para crear diferentes tipos de reportes (Patrón Factory)."""

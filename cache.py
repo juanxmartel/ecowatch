@@ -3,8 +3,8 @@ from collections import deque
 from typing import List, Dict
 import threading
 
-from ecowatch.models import Log
-from ecowatch.config import CACHE_TTL_SECONDS
+from models.logs import Log
+from config import CACHE_TTL_SECONDS
 
 class EcoWatchCache:
     """

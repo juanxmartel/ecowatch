@@ -1,4 +1,4 @@
-from ecowatch.models import Log
+from models.logs import Log
 
 class Sensor:
     """Representa un sensor con sus atributos."""

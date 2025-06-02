@@ -1,7 +1,7 @@
 import pandas as pd
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
-from ecowatch.models import Log
+from models.logs import Log
 import functools
 
 # Decorador para logging 

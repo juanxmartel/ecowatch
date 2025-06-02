@@ -4,18 +4,19 @@ import os
 import pandas as pd
 import logging
 
-from ecowatch.models import CSVLogSource, InMemoryLogSource, LogProcessor
-from ecowatch import EcoWatchCache
-from ecowatch.models import ReportFactory, CSVReportStrategy
-from ecowatch.config import REPORT_OUTPUT_DIR
+from models.Data_ingestion import CSVLogSource, InMemoryLogSource, LogProcessor
+from cache import EcoWatchCache
+from models.report_factory import ReportFactory
+from models.report_strategy import CSVReportStrategy
+from config import REPORT_OUTPUT_DIR
 
 
 logging.basicConfig(
     level=logging.INFO, # Nivel de logging: DEBUG, INFO, WARNING, ERROR, CRITICAL
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.StreamHandler(), # Salida a consola
-        logging.FileHandler("ecowatch.log") # Salida a un archivo de log
+        logging.StreamHandler(), 
+        logging.FileHandler("ecowatch.log") 
     ]
 )
 
